@@ -1,0 +1,136 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Uni\\Segundo Semenestre\\POO\\Desafio-02-POO\\GestorDeBibliotecaUniversitaria\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EA58297B-5BE7-4B22-9ECA-E2363890F867}|GestorDeBibliotecaUniversitaria.csproj|d:\\uni\\segundo semenestre\\poo\\desafio-02-poo\\gestordebibliotecauniversitaria\\formularios\\frmadminestudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EA58297B-5BE7-4B22-9ECA-E2363890F867}|GestorDeBibliotecaUniversitaria.csproj|solutionrelative:formularios\\frmadminestudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA58297B-5BE7-4B22-9ECA-E2363890F867}|GestorDeBibliotecaUniversitaria.csproj|d:\\uni\\segundo semenestre\\poo\\desafio-02-poo\\gestordebibliotecauniversitaria\\formularios\\frmadminlibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EA58297B-5BE7-4B22-9ECA-E2363890F867}|GestorDeBibliotecaUniversitaria.csproj|solutionrelative:formularios\\frmadminlibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA58297B-5BE7-4B22-9ECA-E2363890F867}|GestorDeBibliotecaUniversitaria.csproj|d:\\uni\\segundo semenestre\\poo\\desafio-02-poo\\gestordebibliotecauniversitaria\\formularios\\frmadminestudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA58297B-5BE7-4B22-9ECA-E2363890F867}|GestorDeBibliotecaUniversitaria.csproj|solutionrelative:formularios\\frmadminestudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA58297B-5BE7-4B22-9ECA-E2363890F867}|GestorDeBibliotecaUniversitaria.csproj|d:\\uni\\segundo semenestre\\poo\\desafio-02-poo\\gestordebibliotecauniversitaria\\formularios\\frmmenup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EA58297B-5BE7-4B22-9ECA-E2363890F867}|GestorDeBibliotecaUniversitaria.csproj|solutionrelative:formularios\\frmmenup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA58297B-5BE7-4B22-9ECA-E2363890F867}|GestorDeBibliotecaUniversitaria.csproj|d:\\uni\\segundo semenestre\\poo\\desafio-02-poo\\gestordebibliotecauniversitaria\\clases\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA58297B-5BE7-4B22-9ECA-E2363890F867}|GestorDeBibliotecaUniversitaria.csproj|solutionrelative:clases\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA58297B-5BE7-4B22-9ECA-E2363890F867}|GestorDeBibliotecaUniversitaria.csproj|d:\\uni\\segundo semenestre\\poo\\desafio-02-poo\\gestordebibliotecauniversitaria\\clases\\estudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA58297B-5BE7-4B22-9ECA-E2363890F867}|GestorDeBibliotecaUniversitaria.csproj|solutionrelative:clases\\estudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA58297B-5BE7-4B22-9ECA-E2363890F867}|GestorDeBibliotecaUniversitaria.csproj|d:\\uni\\segundo semenestre\\poo\\desafio-02-poo\\gestordebibliotecauniversitaria\\clases\\profesor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA58297B-5BE7-4B22-9ECA-E2363890F867}|GestorDeBibliotecaUniversitaria.csproj|solutionrelative:clases\\profesor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmAdminEstudiante.cs",
+              "DocumentMoniker": "D:\\Uni\\Segundo Semenestre\\POO\\Desafio-02-POO\\GestorDeBibliotecaUniversitaria\\Formularios\\frmAdminEstudiante.cs",
+              "RelativeDocumentMoniker": "Formularios\\frmAdminEstudiante.cs",
+              "ToolTip": "D:\\Uni\\Segundo Semenestre\\POO\\Desafio-02-POO\\GestorDeBibliotecaUniversitaria\\Formularios\\frmAdminEstudiante.cs",
+              "RelativeToolTip": "Formularios\\frmAdminEstudiante.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAqwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T00:23:01.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmAdminLibros.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Uni\\Segundo Semenestre\\POO\\Desafio-02-POO\\GestorDeBibliotecaUniversitaria\\Formularios\\frmAdminLibros.cs",
+              "RelativeDocumentMoniker": "Formularios\\frmAdminLibros.cs",
+              "ToolTip": "D:\\Uni\\Segundo Semenestre\\POO\\Desafio-02-POO\\GestorDeBibliotecaUniversitaria\\Formularios\\frmAdminLibros.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Formularios\\frmAdminLibros.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T00:19:26.786Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmAdminEstudiante.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Uni\\Segundo Semenestre\\POO\\Desafio-02-POO\\GestorDeBibliotecaUniversitaria\\Formularios\\frmAdminEstudiante.cs",
+              "RelativeDocumentMoniker": "Formularios\\frmAdminEstudiante.cs",
+              "ToolTip": "D:\\Uni\\Segundo Semenestre\\POO\\Desafio-02-POO\\GestorDeBibliotecaUniversitaria\\Formularios\\frmAdminEstudiante.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Formularios\\frmAdminEstudiante.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T00:19:01.065Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Profesor.cs",
+              "DocumentMoniker": "D:\\Uni\\Segundo Semenestre\\POO\\Desafio-02-POO\\GestorDeBibliotecaUniversitaria\\Clases\\Profesor.cs",
+              "RelativeDocumentMoniker": "Clases\\Profesor.cs",
+              "ToolTip": "D:\\Uni\\Segundo Semenestre\\POO\\Desafio-02-POO\\GestorDeBibliotecaUniversitaria\\Clases\\Profesor.cs",
+              "RelativeToolTip": "Clases\\Profesor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T00:08:26.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Estudiante.cs",
+              "DocumentMoniker": "D:\\Uni\\Segundo Semenestre\\POO\\Desafio-02-POO\\GestorDeBibliotecaUniversitaria\\Clases\\Estudiante.cs",
+              "RelativeDocumentMoniker": "Clases\\Estudiante.cs",
+              "ToolTip": "D:\\Uni\\Segundo Semenestre\\POO\\Desafio-02-POO\\GestorDeBibliotecaUniversitaria\\Clases\\Estudiante.cs",
+              "RelativeToolTip": "Clases\\Estudiante.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T00:06:57.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Persona.cs",
+              "DocumentMoniker": "D:\\Uni\\Segundo Semenestre\\POO\\Desafio-02-POO\\GestorDeBibliotecaUniversitaria\\Clases\\Persona.cs",
+              "RelativeDocumentMoniker": "Clases\\Persona.cs",
+              "ToolTip": "D:\\Uni\\Segundo Semenestre\\POO\\Desafio-02-POO\\GestorDeBibliotecaUniversitaria\\Clases\\Persona.cs",
+              "RelativeToolTip": "Clases\\Persona.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T00:05:59.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmMenuP.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Uni\\Segundo Semenestre\\POO\\Desafio-02-POO\\GestorDeBibliotecaUniversitaria\\Formularios\\frmMenuP.cs",
+              "RelativeDocumentMoniker": "Formularios\\frmMenuP.cs",
+              "ToolTip": "D:\\Uni\\Segundo Semenestre\\POO\\Desafio-02-POO\\GestorDeBibliotecaUniversitaria\\Formularios\\frmMenuP.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Formularios\\frmMenuP.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T00:03:06.53Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
