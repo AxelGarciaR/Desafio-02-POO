@@ -23,5 +23,10 @@ namespace GestorDeBibliotecaUniversitaria.Formularios
             menu.Show();
             this.Close();
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

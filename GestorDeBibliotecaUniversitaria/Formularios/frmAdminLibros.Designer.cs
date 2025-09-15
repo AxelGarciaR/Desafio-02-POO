@@ -28,30 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtTituloLibro = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtEditorialLibro = new System.Windows.Forms.TextBox();
+            this.txtAutorLibro = new System.Windows.Forms.TextBox();
+            this.txtISBN = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.dgvAdminLibros = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txtGeneroLibro = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAdminLibros)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox5
+            // txtTituloLibro
             // 
-            this.textBox5.Location = new System.Drawing.Point(88, 97);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(287, 20);
-            this.textBox5.TabIndex = 44;
+            this.txtTituloLibro.Location = new System.Drawing.Point(88, 97);
+            this.txtTituloLibro.Name = "txtTituloLibro";
+            this.txtTituloLibro.Size = new System.Drawing.Size(287, 20);
+            this.txtTituloLibro.TabIndex = 44;
             // 
             // label8
             // 
@@ -63,26 +63,26 @@
             this.label8.TabIndex = 43;
             this.label8.Text = "Titulo libro:";
             // 
-            // textBox4
+            // txtEditorialLibro
             // 
-            this.textBox4.Location = new System.Drawing.Point(117, 139);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(258, 20);
-            this.textBox4.TabIndex = 39;
+            this.txtEditorialLibro.Location = new System.Drawing.Point(117, 139);
+            this.txtEditorialLibro.Name = "txtEditorialLibro";
+            this.txtEditorialLibro.Size = new System.Drawing.Size(258, 20);
+            this.txtEditorialLibro.TabIndex = 39;
             // 
-            // textBox3
+            // txtAutorLibro
             // 
-            this.textBox3.Location = new System.Drawing.Point(88, 57);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(287, 20);
-            this.textBox3.TabIndex = 38;
+            this.txtAutorLibro.Location = new System.Drawing.Point(88, 57);
+            this.txtAutorLibro.Name = "txtAutorLibro";
+            this.txtAutorLibro.Size = new System.Drawing.Size(287, 20);
+            this.txtAutorLibro.TabIndex = 38;
             // 
-            // textBox1
+            // txtISBN
             // 
-            this.textBox1.Location = new System.Drawing.Point(72, 17);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(303, 20);
-            this.textBox1.TabIndex = 36;
+            this.txtISBN.Location = new System.Drawing.Point(72, 17);
+            this.txtISBN.Name = "txtISBN";
+            this.txtISBN.Size = new System.Drawing.Size(303, 20);
+            this.txtISBN.TabIndex = 36;
             // 
             // label3
             // 
@@ -114,25 +114,26 @@
             this.label1.TabIndex = 29;
             this.label1.Text = "ISBN:";
             // 
-            // button4
+            // btnModificar
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(438, 111);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(123, 40);
-            this.button4.TabIndex = 28;
-            this.button4.Text = "Modificar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.Location = new System.Drawing.Point(438, 111);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(123, 40);
+            this.btnModificar.TabIndex = 28;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnEliminar
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(438, 65);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(123, 40);
-            this.button3.TabIndex = 27;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Location = new System.Drawing.Point(438, 65);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(123, 40);
+            this.btnEliminar.TabIndex = 27;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnSalir
             // 
@@ -145,23 +146,23 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // button1
+            // btnAgregar
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(438, 18);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(123, 41);
-            this.button1.TabIndex = 25;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.Location = new System.Drawing.Point(438, 18);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(123, 41);
+            this.btnAgregar.TabIndex = 25;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dgvAdminLibros
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 213);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(549, 186);
-            this.dataGridView1.TabIndex = 24;
+            this.dgvAdminLibros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAdminLibros.Location = new System.Drawing.Point(12, 213);
+            this.dgvAdminLibros.Name = "dgvAdminLibros";
+            this.dgvAdminLibros.Size = new System.Drawing.Size(549, 186);
+            this.dgvAdminLibros.TabIndex = 24;
             // 
             // label4
             // 
@@ -173,56 +174,56 @@
             this.label4.TabIndex = 45;
             this.label4.Text = "Genero libro:";
             // 
-            // textBox2
+            // txtGeneroLibro
             // 
-            this.textBox2.Location = new System.Drawing.Point(117, 177);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(258, 20);
-            this.textBox2.TabIndex = 46;
+            this.txtGeneroLibro.Location = new System.Drawing.Point(117, 177);
+            this.txtGeneroLibro.Name = "txtGeneroLibro";
+            this.txtGeneroLibro.Size = new System.Drawing.Size(258, 20);
+            this.txtGeneroLibro.TabIndex = 46;
             // 
             // frmAdminLibros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(574, 416);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtGeneroLibro);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtTituloLibro);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtEditorialLibro);
+            this.Controls.Add(this.txtAutorLibro);
+            this.Controls.Add(this.txtISBN);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnModificar);
+            this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.dgvAdminLibros);
             this.Name = "frmAdminLibros";
             this.Text = "frmAdminLibros";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAdminLibros)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtTituloLibro;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtEditorialLibro;
+        private System.Windows.Forms.TextBox txtAutorLibro;
+        private System.Windows.Forms.TextBox txtISBN;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.DataGridView dgvAdminLibros;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtGeneroLibro;
     }
 }

@@ -15,15 +15,7 @@ namespace GestorDeBibliotecaUniversitaria.Clases
 
         private string correo;
 
-        private string ISBN;
-
-        private string fechaprestamo;
-
-        private string finfechaprestamo;
-
         private string tipoPersona;
-
-
 
 
     }
