@@ -26,7 +26,7 @@ namespace GestorDeBibliotecaUniversitaria.Servicios
 
         }
 
-        public void CrearUsuario(Libro libro)
+        public void CrearLibro(Libro libro)
         {
 
             if (string.IsNullOrEmpty(libro.ISBN) || string.IsNullOrEmpty(libro.AutorLibro)
@@ -38,13 +38,13 @@ namespace GestorDeBibliotecaUniversitaria.Servicios
             }
             else {
 
-                _libroRepository.insertarUsuario(libro);
+                _libroRepository.insertarLibro(libro);
             }
 
         }
 
        
-        public void ActualizarUsuario(Libro libro)
+        public void ActualizarLibro(Libro libro)
         {
             if (libro.ISBN.Length > 0)
                 throw new ArgumentException("Debe de seleecionar un libro para actualizar");
@@ -57,14 +57,13 @@ namespace GestorDeBibliotecaUniversitaria.Servicios
             }
             else
             {
-                _libroRepository.insertarUsuario(libro);
+                _libroRepository.actualizarLibro(libro);
             }
 
-            _libroRepository.actualizarLibro(libro);
         }
 
 
-        public void EliminarUsuario(Libro libro)
+        public void EliminarLibro(Libro libro)
         {
 
             if (string.IsNullOrEmpty(libro.ISBN))
@@ -75,7 +74,6 @@ namespace GestorDeBibliotecaUniversitaria.Servicios
             }
             else
             {
-
                 _libroRepository.eliminarLibro(libro);
             }
 

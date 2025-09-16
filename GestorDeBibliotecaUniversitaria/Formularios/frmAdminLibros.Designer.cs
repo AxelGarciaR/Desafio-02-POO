@@ -49,9 +49,11 @@
             // txtTituloLibro
             // 
             this.txtTituloLibro.Location = new System.Drawing.Point(88, 97);
+            this.txtTituloLibro.MaxLength = 50;
             this.txtTituloLibro.Name = "txtTituloLibro";
             this.txtTituloLibro.Size = new System.Drawing.Size(287, 20);
             this.txtTituloLibro.TabIndex = 44;
+            this.txtTituloLibro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTituloLibro_KeyPress);
             // 
             // label8
             // 
@@ -66,23 +68,32 @@
             // txtEditorialLibro
             // 
             this.txtEditorialLibro.Location = new System.Drawing.Point(117, 139);
+            this.txtEditorialLibro.MaxLength = 20;
             this.txtEditorialLibro.Name = "txtEditorialLibro";
             this.txtEditorialLibro.Size = new System.Drawing.Size(258, 20);
             this.txtEditorialLibro.TabIndex = 39;
+            this.txtEditorialLibro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEditorialLibro_KeyPress);
             // 
             // txtAutorLibro
             // 
             this.txtAutorLibro.Location = new System.Drawing.Point(88, 57);
+            this.txtAutorLibro.MaxLength = 20;
             this.txtAutorLibro.Name = "txtAutorLibro";
             this.txtAutorLibro.Size = new System.Drawing.Size(287, 20);
             this.txtAutorLibro.TabIndex = 38;
+            this.txtAutorLibro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAutorLibro_KeyPress);
             // 
             // txtISBN
             // 
             this.txtISBN.Location = new System.Drawing.Point(72, 17);
+            this.txtISBN.MaxLength = 17;
             this.txtISBN.Name = "txtISBN";
             this.txtISBN.Size = new System.Drawing.Size(303, 20);
             this.txtISBN.TabIndex = 36;
+            this.txtISBN.Text = "000-0-00-000000-0";
+            this.txtISBN.Click += new System.EventHandler(this.txtISBN_Click);
+            this.txtISBN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtISBN_KeyPress);
+            this.txtISBN.Leave += new System.EventHandler(this.txtISBN_Leave);
             // 
             // label3
             // 
@@ -181,9 +192,11 @@
             // txtGeneroLibro
             // 
             this.txtGeneroLibro.Location = new System.Drawing.Point(117, 177);
+            this.txtGeneroLibro.MaxLength = 20;
             this.txtGeneroLibro.Name = "txtGeneroLibro";
             this.txtGeneroLibro.Size = new System.Drawing.Size(258, 20);
             this.txtGeneroLibro.TabIndex = 46;
+            this.txtGeneroLibro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGeneroLibro_KeyPress);
             // 
             // frmAdminLibros
             // 
@@ -206,7 +219,7 @@
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.dgvAdminLibros);
             this.Name = "frmAdminLibros";
-            this.Text = "frmAdminLibros";
+            this.Text = "Administrar libros";
             this.Load += new System.EventHandler(this.frmAdminLibros_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAdminLibros)).EndInit();
             this.ResumeLayout(false);

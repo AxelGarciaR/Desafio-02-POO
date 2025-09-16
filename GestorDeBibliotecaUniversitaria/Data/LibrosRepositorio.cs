@@ -55,7 +55,7 @@ namespace GestorDeBibliotecaUniversitaria.Data
             return libros;
         }
 
-        public void insertarUsuario(Libro libro) {
+        public void insertarLibro(Libro libro) {
 
             using (var connection = new SqlConnection(_stringConnect)) {
 
