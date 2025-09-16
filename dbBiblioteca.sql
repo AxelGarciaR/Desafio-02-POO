@@ -18,7 +18,7 @@ Create table tbPersona(
 
 Create table tbLibro(
 	
-	ISBN int primary key,
+	ISBN varchar(17) primary key,
 	autorLibro varchar(20) not null,
 	tituloLibro varchar(50) not null,
 	editorialLibro varchar(20) not null,
@@ -35,7 +35,7 @@ Create table tbPrestamoLibro(
 	moraActivaPrestamo bit not null,
 	valorMoraPrestamo decimal(4,2),
 	carnetPersona varchar(20),
-	ISBN int
+	ISBN varchar(17)
 
 );
 

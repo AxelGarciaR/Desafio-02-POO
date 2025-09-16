@@ -123,6 +123,7 @@
             this.btnModificar.TabIndex = 28;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnEliminar
             // 
@@ -155,6 +156,7 @@
             this.btnAgregar.TabIndex = 25;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // dgvAdminLibros
             // 
@@ -163,6 +165,8 @@
             this.dgvAdminLibros.Name = "dgvAdminLibros";
             this.dgvAdminLibros.Size = new System.Drawing.Size(549, 186);
             this.dgvAdminLibros.TabIndex = 24;
+            this.dgvAdminLibros.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAdminLibros_CellClick);
+            this.dgvAdminLibros.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAdminLibros_CellContentClick);
             // 
             // label4
             // 
@@ -203,6 +207,7 @@
             this.Controls.Add(this.dgvAdminLibros);
             this.Name = "frmAdminLibros";
             this.Text = "frmAdminLibros";
+            this.Load += new System.EventHandler(this.frmAdminLibros_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAdminLibros)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
