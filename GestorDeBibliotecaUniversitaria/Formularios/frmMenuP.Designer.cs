@@ -39,17 +39,19 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(100, 40);
+            this.label1.Location = new System.Drawing.Point(31, 38);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(142, 25);
+            this.label1.Size = new System.Drawing.Size(425, 31);
             this.label1.TabIndex = 0;
-            this.label1.Text = "¡Bienvenidos!";
+            this.label1.Text = "¡Bienvenido a tu Biblioteca Virtual!";
             // 
             // btnGestionarPersonas
             // 
-            this.btnGestionarPersonas.Location = new System.Drawing.Point(87, 96);
+            this.btnGestionarPersonas.Location = new System.Drawing.Point(131, 105);
+            this.btnGestionarPersonas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGestionarPersonas.Name = "btnGestionarPersonas";
-            this.btnGestionarPersonas.Size = new System.Drawing.Size(165, 60);
+            this.btnGestionarPersonas.Size = new System.Drawing.Size(220, 74);
             this.btnGestionarPersonas.TabIndex = 1;
             this.btnGestionarPersonas.Text = "Gestionar personas";
             this.btnGestionarPersonas.UseVisualStyleBackColor = true;
@@ -57,9 +59,10 @@
             // 
             // btnGestionarLibros
             // 
-            this.btnGestionarLibros.Location = new System.Drawing.Point(87, 162);
+            this.btnGestionarLibros.Location = new System.Drawing.Point(131, 186);
+            this.btnGestionarLibros.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGestionarLibros.Name = "btnGestionarLibros";
-            this.btnGestionarLibros.Size = new System.Drawing.Size(165, 60);
+            this.btnGestionarLibros.Size = new System.Drawing.Size(220, 74);
             this.btnGestionarLibros.TabIndex = 2;
             this.btnGestionarLibros.Text = "Gestionar Libros";
             this.btnGestionarLibros.UseVisualStyleBackColor = true;
@@ -67,9 +70,10 @@
             // 
             // btnGestionarPrestamos
             // 
-            this.btnGestionarPrestamos.Location = new System.Drawing.Point(87, 228);
+            this.btnGestionarPrestamos.Location = new System.Drawing.Point(131, 268);
+            this.btnGestionarPrestamos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGestionarPrestamos.Name = "btnGestionarPrestamos";
-            this.btnGestionarPrestamos.Size = new System.Drawing.Size(165, 60);
+            this.btnGestionarPrestamos.Size = new System.Drawing.Size(220, 74);
             this.btnGestionarPrestamos.TabIndex = 3;
             this.btnGestionarPrestamos.Text = "Gestionar prestamos";
             this.btnGestionarPrestamos.UseVisualStyleBackColor = true;
@@ -77,9 +81,10 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(87, 294);
+            this.btnSalir.Location = new System.Drawing.Point(131, 349);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(165, 60);
+            this.btnSalir.Size = new System.Drawing.Size(220, 74);
             this.btnSalir.TabIndex = 4;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -87,14 +92,15 @@
             // 
             // frmMenuP
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(352, 408);
+            this.ClientSize = new System.Drawing.Size(500, 502);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnGestionarPrestamos);
             this.Controls.Add(this.btnGestionarLibros);
             this.Controls.Add(this.btnGestionarPersonas);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmMenuP";
             this.Text = "Menu principal";
             this.ResumeLayout(false);
