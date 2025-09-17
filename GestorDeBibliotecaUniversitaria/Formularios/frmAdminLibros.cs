@@ -21,11 +21,10 @@ namespace GestorDeBibliotecaUniversitaria.Formularios
         public frmAdminLibros()
         {
             InitializeComponent();
-            string connectionString = "Server=localhost;Database=dbBiblioteca;encrypt=false;User=sa;password=;";
+            string connectionString = "Server=localhost;Database=dbBiblioteca;encrypt=false;User=sa;password=GR250186;";
             var repository = new Data.LibrosRepositorio(connectionString);
             _libroService = new LibroService(repository);
-
-
+            CargarLibros();
         }
 
         private void frmAdminLibros_Load(object sender, EventArgs e)
@@ -64,6 +63,8 @@ namespace GestorDeBibliotecaUniversitaria.Formularios
                 txtEditorialLibro.Clear();
                 txtGeneroLibro.Clear();
 
+                CargarLibros();
+
             }
             catch (Exception ex) {
 
@@ -92,10 +93,10 @@ namespace GestorDeBibliotecaUniversitaria.Formularios
 
                 
                 txtISBN.Text = fila.Cells["ISBN"].Value.ToString();
-                txtAutorLibro.Text = fila.Cells["Autor"].Value.ToString();
-                txtTituloLibro.Text = fila.Cells["Titulo"].Value.ToString();
-                txtEditorialLibro.Text = fila.Cells["Editorial"].Value.ToString();
-                txtGeneroLibro.Text = fila.Cells["Genero"].Value.ToString();
+                txtAutorLibro.Text = fila.Cells["AutorLibro"].Value.ToString();
+                txtTituloLibro.Text = fila.Cells["TituloLibro"].Value.ToString();
+                txtEditorialLibro.Text = fila.Cells["EditorialLibro"].Value.ToString();
+                txtGeneroLibro.Text = fila.Cells["GeneroLibro"].Value.ToString();
 
 
 
@@ -107,6 +108,8 @@ namespace GestorDeBibliotecaUniversitaria.Formularios
         {
             try
             {
+                MessageBox.Show(libroSeleccionadoID);
+
                 if (string.IsNullOrEmpty(libroSeleccionadoID))
                 {
                     MessageBox.Show("Seleccione un usuario de la lista para eliminar.");
@@ -132,6 +135,8 @@ namespace GestorDeBibliotecaUniversitaria.Formularios
                 txtEditorialLibro.Clear();
                 txtGeneroLibro.Clear();
 
+                CargarLibros();
+
 
             }
             catch (Exception ex)
@@ -146,6 +151,8 @@ namespace GestorDeBibliotecaUniversitaria.Formularios
         {
             try
             {
+                MessageBox.Show(libroSeleccionadoID);
+
                 if (string.IsNullOrEmpty(libroSeleccionadoID))
                 {
                     MessageBox.Show("Seleccione un usuario de la lista para actualizar.");
@@ -190,11 +197,15 @@ namespace GestorDeBibliotecaUniversitaria.Formularios
 
                 libroSeleccionadoID = fila.Cells["ISBN"].Value.ToString();
 
+
                 txtISBN.Text = fila.Cells["ISBN"].Value.ToString();
-                txtAutorLibro.Text = fila.Cells["Autor"].Value.ToString();
-                txtTituloLibro.Text = fila.Cells["Titulo"].Value.ToString();
-                txtEditorialLibro.Text = fila.Cells["Editorial"].Value.ToString();
-                txtGeneroLibro.Text = fila.Cells["Genero"].Value.ToString();
+                txtAutorLibro.Text = fila.Cells["AutorLibro"].Value.ToString();
+                txtTituloLibro.Text = fila.Cells["TituloLibro"].Value.ToString();
+                txtEditorialLibro.Text = fila.Cells["EditorialLibro"].Value.ToString();
+                txtGeneroLibro.Text = fila.Cells["GeneroLibro"].Value.ToString();
+
+                MessageBox.Show(libroSeleccionadoID);
+
             }
         }
 
@@ -341,15 +352,11 @@ namespace GestorDeBibliotecaUniversitaria.Formularios
 
             }
         }
+       
 
-        private void txtISBN_Click(object sender, EventArgs e)
+        private void pbxAyuda_Click(object sender, EventArgs e)
         {
-            txtISBN.Clear();
-        }
-
-        private void txtISBN_Leave(object sender, EventArgs e)
-        {
-            txtISBN.Text = "000-0-00-000000-0";
+            MessageBox.Show("El ISBN tiene un formato 000-0-00-000000-0");
         }
     }
 }

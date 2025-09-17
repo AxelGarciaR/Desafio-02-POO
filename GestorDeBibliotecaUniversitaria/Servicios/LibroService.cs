@@ -46,7 +46,7 @@ namespace GestorDeBibliotecaUniversitaria.Servicios
        
         public void ActualizarLibro(Libro libro)
         {
-            if (libro.ISBN.Length > 0)
+            if (libro.ISBN.Length == 0)
                 throw new ArgumentException("Debe de seleecionar un libro para actualizar");
 
             if (string.IsNullOrEmpty(libro.ISBN) || string.IsNullOrEmpty(libro.AutorLibro)

@@ -24,7 +24,7 @@ namespace GestorDeBibliotecaUniversitaria.Data
 
             using (var connection = new SqlConnection(_stringConnect)){
 
-                string query = "Select ISBN, autorLibro, tituloLibro, editorialLibro, generoLibro from tbLibro";
+                string query = "Select ISBN, autorLibro, tituloLibro, editorialLibro, generoLibro  from tbLibro";
 
                 using (var command = new SqlCommand(query, connection)) {
                     

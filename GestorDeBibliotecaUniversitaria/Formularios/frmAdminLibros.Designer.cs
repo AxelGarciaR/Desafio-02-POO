@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdminLibros));
             this.txtTituloLibro = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtEditorialLibro = new System.Windows.Forms.TextBox();
@@ -43,7 +44,9 @@
             this.dgvAdminLibros = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
             this.txtGeneroLibro = new System.Windows.Forms.TextBox();
+            this.pbxAyuda = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAdminLibros)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxAyuda)).BeginInit();
             this.SuspendLayout();
             // 
             // txtTituloLibro
@@ -90,10 +93,6 @@
             this.txtISBN.Name = "txtISBN";
             this.txtISBN.Size = new System.Drawing.Size(303, 20);
             this.txtISBN.TabIndex = 36;
-            this.txtISBN.Text = "000-0-00-000000-0";
-            this.txtISBN.Click += new System.EventHandler(this.txtISBN_Click);
-            this.txtISBN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtISBN_KeyPress);
-            this.txtISBN.Leave += new System.EventHandler(this.txtISBN_Leave);
             // 
             // label3
             // 
@@ -198,11 +197,23 @@
             this.txtGeneroLibro.TabIndex = 46;
             this.txtGeneroLibro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGeneroLibro_KeyPress);
             // 
+            // pbxAyuda
+            // 
+            this.pbxAyuda.Image = ((System.Drawing.Image)(resources.GetObject("pbxAyuda.Image")));
+            this.pbxAyuda.Location = new System.Drawing.Point(381, 17);
+            this.pbxAyuda.Name = "pbxAyuda";
+            this.pbxAyuda.Size = new System.Drawing.Size(22, 20);
+            this.pbxAyuda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxAyuda.TabIndex = 47;
+            this.pbxAyuda.TabStop = false;
+            this.pbxAyuda.Click += new System.EventHandler(this.pbxAyuda_Click);
+            // 
             // frmAdminLibros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(574, 416);
+            this.Controls.Add(this.pbxAyuda);
             this.Controls.Add(this.txtGeneroLibro);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtTituloLibro);
@@ -222,6 +233,7 @@
             this.Text = "Administrar libros";
             this.Load += new System.EventHandler(this.frmAdminLibros_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAdminLibros)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxAyuda)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -243,5 +255,6 @@
         private System.Windows.Forms.DataGridView dgvAdminLibros;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtGeneroLibro;
+        private System.Windows.Forms.PictureBox pbxAyuda;
     }
 }
