@@ -21,5 +21,13 @@ namespace GestorDeBibliotecaUniversitaria.Formularios
         {
 
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            frmMenuP menu = new frmMenuP();
+            menu.Show();
+            this.Close();
+
+        }
     }
 }
