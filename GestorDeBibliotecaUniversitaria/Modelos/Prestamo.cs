@@ -95,10 +95,8 @@ namespace GestorDeBibliotecaUniversitaria.Clases
             }
         }
 
-        // Constructor vacío (para compatibilidad con BD y Windows Forms)
+    
         public Prestamo() { }
-
-        // Constructor con parámetros
         public Prestamo(int id, DateTime fecha, DateTime finFecha, bool moraActiva, decimal valorMora, string carnet, string isbn)
         {
             IdPrestamo = id;
@@ -113,5 +111,6 @@ namespace GestorDeBibliotecaUniversitaria.Clases
        
     }
 }
+
 
 
