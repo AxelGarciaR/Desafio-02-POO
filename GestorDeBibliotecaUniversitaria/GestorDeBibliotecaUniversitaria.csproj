@@ -170,9 +170,11 @@
   <ItemGroup>
     <Compile Include="Data\LibrosRepositorio.cs" />
     <Compile Include="Data\personasRepositorio.cs" />
+    <Compile Include="Data\PrestamosRepositorio.cs" />
     <Compile Include="Modelos\Estudiante.cs" />
     <Compile Include="Modelos\Libro.cs" />
     <Compile Include="Modelos\Persona.cs" />
+    <Compile Include="Modelos\Prestamo.cs" />
     <Compile Include="Modelos\Profesor.cs" />
     <Compile Include="Formularios\frmAdministrarPersonas.cs">
       <SubType>Form</SubType>
@@ -202,6 +204,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Servicios\LibroService.cs" />
     <Compile Include="Servicios\PersonaService.cs" />
+    <Compile Include="Servicios\PrestamoService.cs" />
     <EmbeddedResource Include="Formularios\frmAdministrarPersonas.resx">
       <DependentUpon>frmAdministrarPersonas.cs</DependentUpon>
     </EmbeddedResource>
