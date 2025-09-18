@@ -109,7 +109,7 @@ namespace GestorDeBibliotecaUniversitaria.Data
 
                 using (var command = new SqlCommand(query, connection))
                 {
-                    command.Parameters.Add(new SqlParameter("@id", System.Data.SqlDbType.Int) { Value = p.CarnetPersona });
+                    command.Parameters.Add(new SqlParameter("@carnet", System.Data.SqlDbType.NVarChar) { Value = p.CarnetPersona });
 
                     connection.Open();
                     command.ExecuteNonQuery();

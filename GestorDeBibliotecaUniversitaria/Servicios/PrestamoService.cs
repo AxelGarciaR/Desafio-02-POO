@@ -33,8 +33,8 @@ namespace GestorDeBibliotecaUniversitaria.Servicios
         // Actualizar un préstamo
         public void ActualizarPrestamo(Prestamo prestamo)
         {
-            if (prestamo.IdPrestamo <= 0)
-                throw new Exception("Seleccione un préstamo válido para actualizar");
+            if ((string.IsNullOrEmpty(prestamo.CarnetPersona)))
+                throw new Exception("Seleccione un prestamo para actualizar");
 
             if (string.IsNullOrEmpty(prestamo.CarnetPersona) || string.IsNullOrEmpty(prestamo.ISBNLibro))
                 throw new Exception("No dejar espacios en blanco");
@@ -45,7 +45,7 @@ namespace GestorDeBibliotecaUniversitaria.Servicios
         // Eliminar un préstamo
         public void EliminarPrestamo(Prestamo prestamo)
         {
-            if (prestamo.IdPrestamo <= 0)
+            if ((string.IsNullOrEmpty(prestamo.CarnetPersona)))
                 throw new Exception("Seleccione un préstamo válido para eliminar");
 
             _prestamoRepository.EliminarPrestamo(prestamo);

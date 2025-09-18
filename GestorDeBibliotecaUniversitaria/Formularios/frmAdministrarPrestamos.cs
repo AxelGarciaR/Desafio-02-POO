@@ -20,16 +20,10 @@ namespace GestorDeBibliotecaUniversitaria.Formularios
         public frmAdministrarPrestamos()
         {
             InitializeComponent();
-            string connectionString = "Server=localhost;Database=dbBiblioteca;encrypt=false;User=sa;password=usuario1111;";
+            string connectionString = "Server=localhost;Database=dbBiblioteca;encrypt=false;User=sa;password=GR250186;";
             var repository = new PrestamosRepositorio(connectionString);
             _prestamoService = new PrestamoService(repository);
-            // aqui agregaremos el codigo para nuestro combobox "tipo de persona"
-            // primero limpiamos cualquier item que pueda existir por defecto
-            cbxTipoPersona.Items.Clear();
-
-            // agregamos las opciones de tipo de persona (por medio de codigo para evitar excepciones)
-            cbxTipoPersona.Items.Add("Estudiante");
-            cbxTipoPersona.Items.Add("Profesor");
+            
 
 
             CargarPrestamos();
@@ -171,6 +165,7 @@ namespace GestorDeBibliotecaUniversitaria.Formularios
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
+            MessageBox.Show(prestamoSeleccionadoId);
             try
             {
                 if (prestamoSeleccionadoId == null)
@@ -179,8 +174,14 @@ namespace GestorDeBibliotecaUniversitaria.Formularios
                     return;
                 }
 
-                Prestamo actualizado = ObtenerPrestamoDesdeCampos(int.Parse(prestamoSeleccionadoId));
-                if (actualizado == null) return;
+                Prestamo actualizado = new Prestamo();
+
+                actualizado.FechaPrestamo = dtpFechaPrestamo.Value;
+                actualizado.FinFechaPrestamo = dtpFinFechaPrestamo.Value;
+                actualizado.MoraActivaPrestamo = chkMora.Checked;
+                actualizado.ValorMoraPrestamo = decimal.Parse(txtValorMora.Text);
+                actualizado.CarnetPersona = txtCarnet.Text;
+                actualizado.ISBNLibro = txtISBN.Text;
 
                 _prestamoService.ActualizarPrestamo(actualizado);
 
@@ -219,7 +220,18 @@ namespace GestorDeBibliotecaUniversitaria.Formularios
                 if (confirmacion == DialogResult.Yes)
                 {
                     Prestamo p = new Prestamo();
+
+
+                    p.FechaPrestamo = dtpFechaPrestamo.Value;
+                    p.FinFechaPrestamo = dtpFinFechaPrestamo.Value;
+                    p.MoraActivaPrestamo = chkMora.Checked;
+                    p.ValorMoraPrestamo = decimal.Parse(txtValorMora.Text);
+                    p.CarnetPersona = txtCarnet.Text;
+                    p.ISBNLibro = txtISBN.Text;
+
+
                     _prestamoService.EliminarPrestamo(p);
+
 
                     MessageBox.Show("Préstamo eliminado correctamente.");
                     LimpiarCampos();
@@ -246,6 +258,7 @@ namespace GestorDeBibliotecaUniversitaria.Formularios
                 dtpFinFechaPrestamo.Value = DateTime.Parse(fila.Cells["FinPrestamo"].Value.ToString());
                 chkMora.Checked = (bool)fila.Cells["MoraActiva"].Value;
                 txtValorMora.Text = fila.Cells["ValorMora"].Value.ToString();
+    
             }
         }
 

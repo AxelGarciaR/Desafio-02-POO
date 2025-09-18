@@ -21,7 +21,7 @@ namespace GestorDeBibliotecaUniversitaria.Formularios
         public frmAdminLibros()
         {
             InitializeComponent();
-            string connectionString = "Server=localhost;Database=dbBiblioteca;encrypt=false;User=sa;password=usuario1111;";
+            string connectionString = "Server=localhost;Database=dbBiblioteca;encrypt=false;User=sa;password=GR250186;";
             var repository = new Data.LibrosRepositorio(connectionString);
             _libroService = new LibroService(repository);
             CargarLibros();
