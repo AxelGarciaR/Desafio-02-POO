@@ -5,3 +5,7 @@
 *.Up2Date
 *.pdb
 *.config
+*\packages
+*\obj
+*\.vs
+
