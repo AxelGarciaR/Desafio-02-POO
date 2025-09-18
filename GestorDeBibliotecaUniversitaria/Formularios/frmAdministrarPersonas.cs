@@ -24,7 +24,7 @@ namespace GestorDeBibliotecaUniversitaria.Formularios
         public frmAdministrarPersonas()
         {
             InitializeComponent();
-            string connectionString = "Server=localhost;Database=dbBiblioteca;encrypt=false;User=sa;password=GR250186;";
+            string connectionString = "Server=localhost;Database=dbBiblioteca;encrypt=false;User=sa;password=usuario1111;";
             var repository = new PersonasRepositorio(connectionString);
             _personaService = new PersonaService(repository);
             // aqui agregaremos el codigo para nuestro combobox "tipo de persona"

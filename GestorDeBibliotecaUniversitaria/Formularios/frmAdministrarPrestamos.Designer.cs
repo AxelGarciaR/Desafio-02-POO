@@ -28,45 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.dgvPrestamos = new System.Windows.Forms.DataGridView();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.txtCarnet = new System.Windows.Forms.TextBox();
+            this.txtValorMora = new System.Windows.Forms.TextBox();
+            this.txtISBN = new System.Windows.Forms.TextBox();
+            this.dtpFechaPrestamo = new System.Windows.Forms.DateTimePicker();
+            this.dtpFinFechaPrestamo = new System.Windows.Forms.DateTimePicker();
+            this.chkMora = new System.Windows.Forms.CheckBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.cbxTipoPersona = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPrestamos)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvPrestamos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 316);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(566, 186);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvPrestamos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPrestamos.Location = new System.Drawing.Point(12, 316);
+            this.dgvPrestamos.Name = "dgvPrestamos";
+            this.dgvPrestamos.Size = new System.Drawing.Size(566, 186);
+            this.dgvPrestamos.TabIndex = 0;
+            this.dgvPrestamos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPrestamos_CellContentClick);
             // 
-            // button1
+            // btnAgregar
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(438, 32);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(114, 44);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.Location = new System.Drawing.Point(438, 32);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(114, 44);
+            this.btnAgregar.TabIndex = 1;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnSalir
             // 
@@ -79,25 +81,27 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // button3
+            // btnEliminar
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(438, 103);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(114, 43);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Location = new System.Drawing.Point(438, 103);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(114, 43);
+            this.btnEliminar.TabIndex = 3;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // button4
+            // btnModificar
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(438, 243);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(114, 42);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Modificar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.Location = new System.Drawing.Point(438, 243);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(114, 42);
+            this.btnModificar.TabIndex = 4;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // label1
             // 
@@ -165,50 +169,50 @@
             this.label7.Text = "Valor de mora:";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // textBox1
+            // txtCarnet
             // 
-            this.textBox1.Location = new System.Drawing.Point(72, 31);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(303, 20);
-            this.textBox1.TabIndex = 12;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtCarnet.Location = new System.Drawing.Point(72, 31);
+            this.txtCarnet.Name = "txtCarnet";
+            this.txtCarnet.Size = new System.Drawing.Size(303, 20);
+            this.txtCarnet.TabIndex = 12;
+            this.txtCarnet.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // txtValorMora
             // 
-            this.textBox2.Location = new System.Drawing.Point(111, 228);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(264, 20);
-            this.textBox2.TabIndex = 13;
+            this.txtValorMora.Location = new System.Drawing.Point(111, 228);
+            this.txtValorMora.Name = "txtValorMora";
+            this.txtValorMora.Size = new System.Drawing.Size(264, 20);
+            this.txtValorMora.TabIndex = 13;
             // 
-            // textBox4
+            // txtISBN
             // 
-            this.textBox4.Location = new System.Drawing.Point(89, 70);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(286, 20);
-            this.textBox4.TabIndex = 16;
+            this.txtISBN.Location = new System.Drawing.Point(89, 70);
+            this.txtISBN.Name = "txtISBN";
+            this.txtISBN.Size = new System.Drawing.Size(286, 20);
+            this.txtISBN.TabIndex = 16;
             // 
-            // dateTimePicker1
+            // dtpFechaPrestamo
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(140, 105);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(235, 20);
-            this.dateTimePicker1.TabIndex = 17;
+            this.dtpFechaPrestamo.Location = new System.Drawing.Point(140, 105);
+            this.dtpFechaPrestamo.Name = "dtpFechaPrestamo";
+            this.dtpFechaPrestamo.Size = new System.Drawing.Size(235, 20);
+            this.dtpFechaPrestamo.TabIndex = 17;
             // 
-            // dateTimePicker2
+            // dtpFinFechaPrestamo
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(139, 145);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(236, 20);
-            this.dateTimePicker2.TabIndex = 18;
+            this.dtpFinFechaPrestamo.Location = new System.Drawing.Point(139, 145);
+            this.dtpFinFechaPrestamo.Name = "dtpFinFechaPrestamo";
+            this.dtpFinFechaPrestamo.Size = new System.Drawing.Size(236, 20);
+            this.dtpFinFechaPrestamo.TabIndex = 18;
             // 
-            // checkBox1
+            // chkMora
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(96, 191);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
-            this.checkBox1.TabIndex = 19;
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkMora.AutoSize = true;
+            this.chkMora.Location = new System.Drawing.Point(96, 191);
+            this.chkMora.Name = "chkMora";
+            this.chkMora.Size = new System.Drawing.Size(15, 14);
+            this.chkMora.TabIndex = 19;
+            this.chkMora.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
@@ -220,41 +224,42 @@
             this.label9.TabIndex = 22;
             this.label9.Text = "Tipo persona:";
             // 
-            // comboBox1
+            // cbxTipoPersona
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(111, 264);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(264, 21);
-            this.comboBox1.TabIndex = 23;
+            this.cbxTipoPersona.FormattingEnabled = true;
+            this.cbxTipoPersona.Location = new System.Drawing.Point(111, 264);
+            this.cbxTipoPersona.Name = "cbxTipoPersona";
+            this.cbxTipoPersona.Size = new System.Drawing.Size(264, 21);
+            this.cbxTipoPersona.TabIndex = 23;
             // 
             // frmAdministrarPrestamos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(590, 517);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbxTipoPersona);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.chkMora);
+            this.Controls.Add(this.dtpFinFechaPrestamo);
+            this.Controls.Add(this.dtpFechaPrestamo);
+            this.Controls.Add(this.txtISBN);
+            this.Controls.Add(this.txtValorMora);
+            this.Controls.Add(this.txtCarnet);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnModificar);
+            this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.dgvPrestamos);
             this.Name = "frmAdministrarPrestamos";
             this.Text = "Administrar Estudiantes";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.frmAdministrarPrestamos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPrestamos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,24 +267,24 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dgvPrestamos;
+        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.TextBox txtCarnet;
+        private System.Windows.Forms.TextBox txtValorMora;
+        private System.Windows.Forms.TextBox txtISBN;
+        private System.Windows.Forms.DateTimePicker dtpFechaPrestamo;
+        private System.Windows.Forms.DateTimePicker dtpFinFechaPrestamo;
+        private System.Windows.Forms.CheckBox chkMora;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbxTipoPersona;
     }
 }

@@ -37,7 +37,6 @@ namespace GestorDeBibliotecaUniversitaria.Data
                         {
                             Prestamo p = new Prestamo
                             {
-                                IdPrestamo = Convert.ToInt32(reader["idPrestamo"]),
                                 FechaPrestamo = Convert.ToDateTime(reader["fechaPrestamo"]),
                                 FinFechaPrestamo = Convert.ToDateTime(reader["finFechaPrestamo"]),
                                 MoraActivaPrestamo = Convert.ToBoolean(reader["moraActivaPrestamo"]),
@@ -84,11 +83,10 @@ namespace GestorDeBibliotecaUniversitaria.Data
             using (var connection = new SqlConnection(_stringConnect))
             {
                 string query = "UPDATE tbPrestamoLibro SET fechaPrestamo=@fecha, finFechaPrestamo=@finFecha, moraActivaPrestamo=@moraActiva, valorMoraPrestamo=@valorMora, carnetPersona=@carnet, ISBN=@isbn " +
-                               "WHERE idPrestamo=@id";
+                               "WHERE CarnetPersona=@carnet";
 
                 using (var command = new SqlCommand(query, connection))
                 {
-                    command.Parameters.Add(new SqlParameter("@id", System.Data.SqlDbType.Int) { Value = p.IdPrestamo });
                     command.Parameters.Add(new SqlParameter("@fecha", System.Data.SqlDbType.Date) { Value = p.FechaPrestamo });
                     command.Parameters.Add(new SqlParameter("@finFecha", System.Data.SqlDbType.Date) { Value = p.FinFechaPrestamo });
                     command.Parameters.Add(new SqlParameter("@moraActiva", System.Data.SqlDbType.Bit) { Value = p.MoraActivaPrestamo });
@@ -107,11 +105,11 @@ namespace GestorDeBibliotecaUniversitaria.Data
         {
             using (var connection = new SqlConnection(_stringConnect))
             {
-                string query = "DELETE FROM tbPrestamoLibro WHERE idPrestamo=@id";
+                string query = "DELETE FROM tbPrestamoLibro WHERE CarnetPersona = @carnet";
 
                 using (var command = new SqlCommand(query, connection))
                 {
-                    command.Parameters.Add(new SqlParameter("@id", System.Data.SqlDbType.Int) { Value = p.IdPrestamo });
+                    command.Parameters.Add(new SqlParameter("@id", System.Data.SqlDbType.Int) { Value = p.CarnetPersona });
 
                     connection.Open();
                     command.ExecuteNonQuery();
