@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestorDeBibliotecaUniversitaria.Modelos
+namespace GestorDeBibliotecaUniversitaria.Clases
 {
     internal class Prestamo
     {
@@ -126,3 +126,4 @@ namespace GestorDeBibliotecaUniversitaria.Modelos
 
     }
 }
+
