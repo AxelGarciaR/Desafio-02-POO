@@ -10,6 +10,7 @@ namespace GestorDeBibliotecaUniversitaria.Servicios
 {
     internal class PrestamoService
     {
+
         private readonly PrestamosRepositorio _prestamoRepository;
 
         public PrestamoService(PrestamosRepositorio repositorio)

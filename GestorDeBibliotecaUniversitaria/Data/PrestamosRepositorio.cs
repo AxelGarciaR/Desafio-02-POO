@@ -10,6 +10,7 @@ namespace GestorDeBibliotecaUniversitaria.Data
 {
     internal class PrestamosRepositorio
     {
+
         private readonly string _stringConnect;
 
         public PrestamosRepositorio(string stringConnect)
