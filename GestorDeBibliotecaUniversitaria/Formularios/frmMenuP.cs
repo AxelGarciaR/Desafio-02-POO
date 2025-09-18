@@ -43,5 +43,18 @@ namespace GestorDeBibliotecaUniversitaria
         {
             this.Close();   
         }
+
+        private void btnGestionarPersonas_MouseHover(object sender, EventArgs e)
+        {
+            btnGestionarPersonas.BackColor = Color.FromArgb(40, 57, 83);
+            btnGestionarPersonas.ForeColor = Color.White;
+
+        }
+
+        private void btnGestionarPersonas_MouseLeave(object sender, EventArgs e)
+        {
+            btnGestionarPersonas.BackColor = Color.FromArgb(244, 235, 220);
+            btnGestionarPersonas.ForeColor = Color.Black;
+        }
     }
 }
