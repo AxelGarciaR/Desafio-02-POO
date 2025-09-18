@@ -27,12 +27,6 @@ namespace GestorDeBibliotecaUniversitaria.Formularios
             string connectionString = "Server=localhost;Database=dbBiblioteca;encrypt=false;User=sa;password=GR250186;";
             var repository = new PersonasRepositorio(connectionString);
             _personaService = new PersonaService(repository);
-            CargarPersonas();
-        }
-
-        private void frmAdministrarPedidos_Load(object sender, EventArgs e)
-        {
-            InitializeComponent();
             // aqui agregaremos el codigo para nuestro combobox "tipo de persona"
             // primero limpiamos cualquier item que pueda existir por defecto
             cbxTipoPersona.Items.Clear();
@@ -40,6 +34,13 @@ namespace GestorDeBibliotecaUniversitaria.Formularios
             // agregamos las opciones de tipo de persona (por medio de codigo para evitar excepciones)
             cbxTipoPersona.Items.Add("Estudiante");
             cbxTipoPersona.Items.Add("Profesor");
+
+            CargarPersonas();
+        }
+
+        private void frmAdministrarPedidos_Load(object sender, EventArgs e)
+        {
+           
         }
 
         private void CargarPersonas()
@@ -186,7 +187,7 @@ namespace GestorDeBibliotecaUniversitaria.Formularios
 
 
         // este metodo sirve para cargar nuevamente los datos de la fila seleccionada por el usuario en los TextBox
-        private void dgvAdministrarPersonas_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvPersonas_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
             {
@@ -197,6 +198,7 @@ namespace GestorDeBibliotecaUniversitaria.Formularios
                 txtCorreo.Text = fila.Cells["Correo"].Value.ToString();
                 cbxTipoPersona.SelectedItem = fila.Cells["TipoPersona"].Value.ToString();
             }
+
         }
 
 
@@ -220,7 +222,6 @@ namespace GestorDeBibliotecaUniversitaria.Formularios
 
         }
 
-
-
+       
     }
 }

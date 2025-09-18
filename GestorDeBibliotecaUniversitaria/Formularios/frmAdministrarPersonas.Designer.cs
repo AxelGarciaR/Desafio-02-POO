@@ -156,6 +156,7 @@
             this.dgvPersonas.Name = "dgvPersonas";
             this.dgvPersonas.Size = new System.Drawing.Size(549, 186);
             this.dgvPersonas.TabIndex = 47;
+            this.dgvPersonas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPersonas_CellClick);
             // 
             // cbxTipoPersona
             // 
