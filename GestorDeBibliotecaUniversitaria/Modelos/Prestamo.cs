@@ -110,20 +110,8 @@ namespace GestorDeBibliotecaUniversitaria.Clases
             ISBNLibro = isbn;
         }
 
-        // Método para mostrar información del préstamo
-        public void MostrarInfo()
-        {
-            MessageBox.Show(
-                $"ID Préstamo: {IdPrestamo}\n" +
-                $"Fecha inicio: {FechaPrestamo.ToShortDateString()}\n" +
-                $"Fecha fin: {FinFechaPrestamo.ToShortDateString()}\n" +
-                $"Mora activa: {(MoraActivaPrestamo ? "Sí" : "No")}\n" +
-                $"Valor mora: {ValorMoraPrestamo:C}\n" +
-                $"Carnet: {CarnetPersona}\n" +
-                $"ISBN: {ISBNLibro}"
-            );
-        }
-
+       
     }
 }
+
 
