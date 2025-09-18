@@ -252,7 +252,7 @@
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.dgvPrestamos);
             this.Name = "frmAdministrarPrestamos";
-            this.Text = "Administrar Estudiantes";
+            this.Text = "Administrar reservas";
             this.Load += new System.EventHandler(this.frmAdministrarPrestamos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrestamos)).EndInit();
             this.ResumeLayout(false);

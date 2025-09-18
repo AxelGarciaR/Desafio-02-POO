@@ -56,5 +56,10 @@ namespace GestorDeBibliotecaUniversitaria
             btnGestionarPersonas.BackColor = Color.FromArgb(244, 235, 220);
             btnGestionarPersonas.ForeColor = Color.Black;
         }
+
+        private void frmMenuP_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
